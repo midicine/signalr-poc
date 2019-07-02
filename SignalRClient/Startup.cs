@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SignalRPoc.Hubs;
 
-namespace SignalRPoc
+namespace SignalRClient
 {
     public class Startup
     {
@@ -26,8 +25,6 @@ namespace SignalRPoc
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
-            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,10 +41,6 @@ namespace SignalRPoc
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
-            app.UseSignalR(routes =>
-            {
-                routes.MapHub<MessageHub>($"/{nameof(MessageHub)}");
-            });
             app.UseMvc();
         }
     }

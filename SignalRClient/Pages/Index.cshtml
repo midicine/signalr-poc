@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">&nbsp;</div>
+            <div class="col-12">
+                <button type="button" id="btn" class="btn btn-outline-primary btn-lg btn-block">Start to get messages!</button>
+            </div>
+            <div class="col-12">&nbsp;</div>
+            <div class="col-12">
+                <ul id="messagesList" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+@section Scripts {
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+}
