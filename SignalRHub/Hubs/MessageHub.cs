@@ -1,7 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
-using Bogus;
+﻿using Bogus;
 using Microsoft.AspNetCore.SignalR;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace SignalRHub.Hubs
 {
@@ -9,8 +10,11 @@ namespace SignalRHub.Hubs
     {
         public async Task GetMessage()
         {
-            //await Task.Delay(5000);
-            await Clients.Caller.SendAsync("ReceiveMessage", $"[{DateTime.Now:s}] [connection {Context.ConnectionId}] Sent by {new Faker().Name.FullName()}");
+            for (var i = 0; ; i++)
+            {
+                await Clients.Caller.SendAsync("ReceiveMessage", $"[{DateTime.Now:s}] [{i}] Sent by {new Faker().Name.FullName()}");
+                await Task.Delay(5000);
+            }
         }
     }
 }
