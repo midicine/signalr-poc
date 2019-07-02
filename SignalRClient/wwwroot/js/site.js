@@ -3,7 +3,8 @@
 var connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:7409/MessageHub").build();
 
 connection.on("ReceiveMessage", function (message) {
-    $("#messagesList").append($("<li class='list-group-item'>" + message + "</li>"));
+    $('.list-group-item.active').removeClass("active");
+    $("#messagesList").append($("<li class='list-group-item active'>" + message + "</li>"));
 });
 
 connection
