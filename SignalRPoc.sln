@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{39267BBF-60A5-4110-800A-B590D015DA98}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRClient", "SignalRClient\SignalRClient.csproj", "{4153474D-C71D-4845-8D1C-714018689B8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRClient", "src\SignalRClient\SignalRClient.csproj", "{EE11D5FB-E9AE-45E3-BDA3-58008B1C1FCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRHub", "SignalRHub\SignalRHub.csproj", "{CEEF5951-64E4-4EAA-BD35-92DE7B04320F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRHub", "src\SignalRHub\SignalRHub.csproj", "{027BF99E-5988-443F-A68B-7D6FE905DD45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +15,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4153474D-C71D-4845-8D1C-714018689B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4153474D-C71D-4845-8D1C-714018689B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4153474D-C71D-4845-8D1C-714018689B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4153474D-C71D-4845-8D1C-714018689B8E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEEF5951-64E4-4EAA-BD35-92DE7B04320F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEEF5951-64E4-4EAA-BD35-92DE7B04320F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEEF5951-64E4-4EAA-BD35-92DE7B04320F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEEF5951-64E4-4EAA-BD35-92DE7B04320F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE11D5FB-E9AE-45E3-BDA3-58008B1C1FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE11D5FB-E9AE-45E3-BDA3-58008B1C1FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE11D5FB-E9AE-45E3-BDA3-58008B1C1FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE11D5FB-E9AE-45E3-BDA3-58008B1C1FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027BF99E-5988-443F-A68B-7D6FE905DD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027BF99E-5988-443F-A68B-7D6FE905DD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027BF99E-5988-443F-A68B-7D6FE905DD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027BF99E-5988-443F-A68B-7D6FE905DD45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4153474D-C71D-4845-8D1C-714018689B8E} = {39267BBF-60A5-4110-800A-B590D015DA98}
-		{CEEF5951-64E4-4EAA-BD35-92DE7B04320F} = {39267BBF-60A5-4110-800A-B590D015DA98}
+		{EE11D5FB-E9AE-45E3-BDA3-58008B1C1FCB} = {39267BBF-60A5-4110-800A-B590D015DA98}
+		{027BF99E-5988-443F-A68B-7D6FE905DD45} = {39267BBF-60A5-4110-800A-B590D015DA98}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E54B3BD1-2355-4096-8A3A-239BBD16E022}
