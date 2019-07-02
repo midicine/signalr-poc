@@ -41,7 +41,10 @@ namespace SignalRClient
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Index}/{action=Index}/{id?}");
+            });
         }
     }
 }
